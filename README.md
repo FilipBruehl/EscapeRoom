@@ -1,7 +1,7 @@
 # EscapeRoom
 AR/VR Semesterprojekt von Kristof Markwardt und Filip Hugo Brühl
 
-## Milestone 1 - 
+## Milestone 1
 ### Beschreibung der App
 Die App wird eine Virtual Reality Version des bekannten Escape Room Konzepts.
 Der Spieler befindet sich zu Beginn in einem geschlossenen Raum und erhält
