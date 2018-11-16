@@ -21,6 +21,7 @@ und es werden verschiedene Licht-Settings zum Einsatz kommen.
 ### Verwendete Hardware
 Das Projekt wird über Unity als OpenVR-Projekt erstellt, damit es auf allen gängigen
 VR-Brillen läuft.
+---
 
 ## Milestone 2 - Prototyp
 + VRTK installiert
