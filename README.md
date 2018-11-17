@@ -29,9 +29,12 @@ VR-Brillen läuft.
 + Loch für Tür erstellt
 + Bett und Kommode eingefügt
 + Schlüssel in ProBuilder erstellt
-
-**TODO**
 + Türmodell erstellen
 + Texturen hinzufügen
+
+**TODO**
 + Funktionalität für das Aufnehmen, den Schlüssel und die Tür hinzufügen
++ Interaktionen mit Objekten
++ Hinzufügen von Pointern und Avatar
++ SteamVR zum Laufen bringen
 
