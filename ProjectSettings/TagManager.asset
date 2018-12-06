@@ -10,6 +10,7 @@ TagManager:
   - Environment
   - Item
   - TpEx
+  - Riddle1
   layers:
   - Default
   - TransparentFX
