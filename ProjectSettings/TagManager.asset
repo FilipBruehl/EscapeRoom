@@ -9,6 +9,7 @@ TagManager:
   - TeleportIgnore
   - Environment
   - Item
+  - TpEx
   layers:
   - Default
   - TransparentFX
