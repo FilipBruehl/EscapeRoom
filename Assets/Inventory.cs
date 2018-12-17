@@ -59,7 +59,7 @@ public class Inventory : MonoBehaviour {
         return false;
     }
 
-    public bool HasItem(string name)
+    public bool HasItemName(string name)
     {
         foreach(GameObject item in items)
         {

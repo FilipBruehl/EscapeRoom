@@ -25,7 +25,7 @@ public class Key : VRTK_InteractableObject {
     {
         base.StartUsing(currentUsingObject);
         Debug.Log(gameObject.name + " start using");
-        GameObject.FindGameObjectWithTag("Inventory").GetComponent("Inventory").AddItem(gameObject);
+        GameObject.Find("Inventory").GetComponent<Inventory>().AddItem(gameObject);
     }
 
     public override void StopUsing(VRTK_InteractUse previousUsingObject = null)
