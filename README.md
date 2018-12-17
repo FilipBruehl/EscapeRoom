@@ -35,10 +35,16 @@ VR-Brillen läuft.
 ## Milestone 3 - Beta
 + Hinzufügen von Pointern
 + SteamVR zum Laufen bringen
++ Grabb und Use Mechanik implementiert
++ Inventar implementiert
++ Tür und Schlüssel fertig
++ Prefabs erstellt
 
 
 **TODO**
-+ Funktionalität für das Aufnehmen, den Schlüssel und die Tür hinzufügen
-+ Interaktionen mit Objekten
++ User Interface
++ Sounds
++ mehr Räume
++ Debug Nachrichten durch Funktionalität austauschen
 
 
