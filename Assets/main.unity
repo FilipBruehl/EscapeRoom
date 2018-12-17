@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1308,6 +1308,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1003675952718100, guid: b882845ca43469546a44ec594ebcb293,
     type: 2}
   m_PrefabInternal: {fileID: 648540385}
+--- !u!114 &121488995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 121488994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4bb180f4bff09498fce689fc9d1c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
 --- !u!1001 &122091370
 Prefab:
   m_ObjectHideFlags: 0
@@ -5910,7 +5922,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh42030
+  m_Name: pb_Mesh24468
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -8951,7 +8963,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114638676966244482, guid: b882845ca43469546a44ec594ebcb293, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b882845ca43469546a44ec594ebcb293, type: 2}
   m_IsPrefabParent: 0
 --- !u!28 &651778361
@@ -9768,7 +9781,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-40350
+  m_Name: pb_Mesh-1980
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -11004,7 +11017,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh42248
+  m_Name: pb_Mesh24694
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -14728,7 +14741,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh42048
+  m_Name: pb_Mesh24494
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -23996,7 +24009,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh42476
+  m_Name: pb_Mesh24922
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -25095,7 +25108,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh41528
+  m_Name: pb_Mesh23956
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -26341,6 +26354,16 @@ Prefab:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 121488994}
+    - target: {fileID: 54364095541318000, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54364095541318000, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5cf15e59fb9beb4e937f3de76be4689, type: 2}
   m_IsPrefabParent: 0

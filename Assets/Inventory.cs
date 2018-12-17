@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour {
-    public GameObject[] items = new GameObject[5];
-    public const int size = 5;
+    public List<GameObject> items = new List<GameObject>();
 
     void Start()
     {
@@ -13,35 +12,27 @@ public class Inventory : MonoBehaviour {
 
     public void AddItem(GameObject newItem)
     {
-        for (int i = 0; i < size; i++)
+        if(!this.HasItem(newItem))
         {
-            if (items[i] == null)
-            {
-                items[i] = newItem;
-                Debug.Log(newItem.name + " addet to inventory");
-            }
+            items.Add(newItem);
+            Debug.Log(string.Format("{0} addet to inventory.", newItem.name));
         }
     }
 
     public void DeleteItem(GameObject removeItem)
     {
-        for(int i = 0; i < size; i++)
-        {
-            if (items[i] == removeItem)
-            {
-                items[i] = null;
-            }
-        }
+        items.Remove(removeItem);
+        Debug.Log(string.Format("{0} removed from inventory", removeItem.name));
     }
 
     public bool DeleteItem(int pos)
     {
-        if(pos > size)
+        if(pos > items.Count)
         {
             return false;
         } else
         {
-            items[pos] = null;
+            items.RemoveAt(pos);
             return true;
         }
     }
@@ -70,6 +61,19 @@ public class Inventory : MonoBehaviour {
             return false;
         }
         return false;
+    }
+
+    public override string ToString()
+    {
+        string ausgabe = "Elemente im Inventar:\n";
+        for (int i = 0; i < items.Count; i++)
+        {
+            if(items[i] != null)
+            {
+                ausgabe += string.Format("{0} - {1}\n", i, items[i].name);
+            }
+        }
+        return ausgabe;
     }
 
 }
