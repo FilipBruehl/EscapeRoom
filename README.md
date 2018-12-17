@@ -32,13 +32,13 @@ VR-Brillen läuft.
 + Türmodell erstellen
 + Texturen hinzufügen
 
-## Milenstone 3 - Beta
-+ SteamVR zum Laufen bringen
+## Milestone 3 - Beta
 + Hinzufügen von Pointern
++ SteamVR zum Laufen bringen
+
 
 **TODO**
 + Funktionalität für das Aufnehmen, den Schlüssel und die Tür hinzufügen
 + Interaktionen mit Objekten
-+ Hinzufügen von Pointern und Avatar
 
 
