@@ -9,6 +9,9 @@ public class Door : VRTK_InteractableObject
     public GameObject key;
     public GameObject inventory;
     public GameObject light;
+    public GameObject speakers;
+    public AudioClip succes;
+    public AudioClip fail;
     public string nextSceneName;
 
 	// Use this for initialization
@@ -22,10 +25,12 @@ public class Door : VRTK_InteractableObject
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.green;
             light.GetComponentInChildren<Light>().color = Color.green;
+            speakers.GetComponent<AudioSource>().clip = succes;
         } else
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.red;
             light.GetComponentInChildren<Light>().color = Color.red;
+            speakers.GetComponent<AudioSource>().clip = fail;
         }
 	}
 
@@ -33,6 +38,7 @@ public class Door : VRTK_InteractableObject
     {
         base.StartUsing(currentUsingObject);
         Debug.Log(gameObject.name + " start using");
+        speakers.GetComponent<AudioSource>().Play();
         if(GameObject.Find(key.name).GetComponent<Key>().IsGrabbed() || inventory.GetComponent<Inventory>().HasItem(key)) {
             Debug.Log("Won");
             if (nextSceneName.Length > 0)
