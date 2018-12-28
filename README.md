@@ -40,14 +40,11 @@ VR-Brillen läuft.
 + Tür und Schlüssel fertig
 + Prefabs erstellt
 
-## Milestone 4 - Release
-+ mehr Räume
-+ Debug Nachrichten durch Funktionalität austauschen
 
 **TODO**
-+ mehr Räume
++ User Interface
 + Sounds
-+ Eingesprochene Texte
-
++ mehr Räume
++ Debug Nachrichten durch Funktionalität austauschen
 
 

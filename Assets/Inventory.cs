@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
     public List<GameObject> items = new List<GameObject>();
 
     void Start()
+    {
+
+    }
+
+    private void Update()
     {
 
     }
@@ -66,6 +72,12 @@ public class Inventory : MonoBehaviour {
     public override string ToString()
     {
         string ausgabe = "Elemente im Inventar:\n";
+
+        if(items.Count == 0)
+        {
+            ausgabe += "Keine Elemente im Inventar.\n";
+        }
+
         for (int i = 0; i < items.Count; i++)
         {
             if(items[i] != null)
