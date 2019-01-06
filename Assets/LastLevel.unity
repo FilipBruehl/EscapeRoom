@@ -8635,7 +8635,8 @@ MonoBehaviour:
   usingState: 0
   light: {fileID: 1347023711}
   speakers: {fileID: 1942993252}
-  fail: {fileID: 8300000, guid: 024f90dfca241a1408d388aefb8835cc, type: 3}
+  fail:
+  - {fileID: 8300000, guid: 024f90dfca241a1408d388aefb8835cc, type: 3}
 --- !u!1 &1791567602
 GameObject:
   m_ObjectHideFlags: 0

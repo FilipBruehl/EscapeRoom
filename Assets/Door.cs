@@ -10,8 +10,8 @@ public class Door : VRTK_InteractableObject
     public GameObject inventory;
     public GameObject light;
     public GameObject speakers;
-    public AudioClip succes;
-    public AudioClip fail;
+    public AudioClip[] succes;
+    public AudioClip[] fail;
     public string nextSceneName;
 
 	// Use this for initialization
@@ -21,16 +21,16 @@ public class Door : VRTK_InteractableObject
 	
 	// Update is called once per frame
 	void Update () {
-		if(GameObject.Find(key.name).GetComponent<Key>().IsGrabbed() || inventory.GetComponent<Inventory>().HasItem(key))
+        if (GameObject.Find(key.name).GetComponent<Key>().IsGrabbed() || inventory.GetComponent<Inventory>().HasItem(key))
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.green;
             light.GetComponentInChildren<Light>().color = Color.green;
-            speakers.GetComponent<AudioSource>().clip = succes;
+            speakers.GetComponent<AudioSource>().clip = succes[Random.Range(0, succes.Length)];
         } else
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.red;
             light.GetComponentInChildren<Light>().color = Color.red;
-            speakers.GetComponent<AudioSource>().clip = fail;
+            speakers.GetComponent<AudioSource>().clip = fail[Random.Range(0, succes.Length)];
         }
 	}
 

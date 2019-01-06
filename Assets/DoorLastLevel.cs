@@ -8,14 +8,14 @@ public class DoorLastLevel : VRTK_InteractableObject
 {
     public GameObject light;
     public GameObject speakers;
-    public AudioClip fail;
+    public AudioClip[] fail;
 
     // Use this for initialization
     void Start()
     {
         gameObject.GetComponent<DoorLastLevel>().touchHighlightColor = Color.red;
         light.GetComponentInChildren<Light>().color = Color.red;
-        speakers.GetComponent<AudioSource>().clip = fail;
+        speakers.GetComponent<AudioSource>().clip = fail[Random.Range(0, fail.Length)];
     }
 
     // Update is called once per frame

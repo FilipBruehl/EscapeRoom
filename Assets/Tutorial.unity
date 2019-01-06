@@ -564,6 +564,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1049304500}
     m_Modifications:
+    - target: {fileID: 114786175969416072, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: fail.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114786175969416072, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: succes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4490716030558992, guid: e5cf15e59fb9beb4e937f3de76be4689, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -625,10 +635,20 @@ Prefab:
         type: 2}
       propertyPath: succes
       value: 
-      objectReference: {fileID: 8300000, guid: 8e3293c27a0bbe64e8cebaffd925ffed, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114786175969416072, guid: e5cf15e59fb9beb4e937f3de76be4689,
         type: 2}
       propertyPath: fail
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114786175969416072, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: succes.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8e3293c27a0bbe64e8cebaffd925ffed, type: 3}
+    - target: {fileID: 114786175969416072, guid: e5cf15e59fb9beb4e937f3de76be4689,
+        type: 2}
+      propertyPath: fail.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 5c4d3563da8adad429a9d97f5a0a53cd, type: 3}
     m_RemovedComponents: []
@@ -2233,7 +2253,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh41822
+  m_Name: pb_Mesh25478
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7504,7 +7524,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh41988
+  m_Name: pb_Mesh25616
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
