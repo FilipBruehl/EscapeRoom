@@ -25,12 +25,10 @@ public class Door : VRTK_InteractableObject
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.green;
             light.GetComponentInChildren<Light>().color = Color.green;
-            speakers.GetComponent<AudioSource>().clip = succes[Random.Range(0, succes.Length)];
         } else
         {
             gameObject.GetComponent<Door>().touchHighlightColor = Color.red;
             light.GetComponentInChildren<Light>().color = Color.red;
-            speakers.GetComponent<AudioSource>().clip = fail[Random.Range(0, succes.Length)];
         }
 	}
 
@@ -38,18 +36,24 @@ public class Door : VRTK_InteractableObject
     {
         base.StartUsing(currentUsingObject);
         Debug.Log(gameObject.name + " start using");
-        speakers.GetComponent<AudioSource>().Play();
         if(GameObject.Find(key.name).GetComponent<Key>().IsGrabbed() || inventory.GetComponent<Inventory>().HasItem(key)) {
+            speakers.GetComponent<AudioSource>().clip = succes[Random.Range(0, succes.Length)];
             Debug.Log("Won");
             if (nextSceneName.Length > 0)
             {
-                StartCoroutine(LoadNewLevelAfter(2.5f));
+                StartCoroutine(LoadNewLevelAfter(speakers.GetComponent<AudioSource>().clip.length));
             }
         } else
         {
             Debug.Log("Such weiter.");
+            speakers.GetComponent<AudioSource>().clip = fail[Random.Range(0, succes.Length)];
+        }
+        if (!speakers.GetComponent<AudioSource>().isPlaying)
+        {
+            speakers.GetComponent<AudioSource>().Play();
         }
     }
+
 
     IEnumerator LoadNewLevelAfter(float time)
     {

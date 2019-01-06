@@ -3072,6 +3072,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 769314035}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &769543513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 769543515}
+  - component: {fileID: 769543514}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &769543514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769543513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9690954127af194f9c7ded7178b3318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TutAudio:
+  - {fileID: 8300000, guid: 889e87e712bb7d544bc2c3cebfc50b6e, type: 3}
+  - {fileID: 8300000, guid: 3c90d979a7f2a10419204e60898a5604, type: 3}
+  - {fileID: 8300000, guid: 47d48c72ae6d22247aa1a9a7e64a7e93, type: 3}
+  - {fileID: 8300000, guid: 2feade2b78deaea42b5c1c7a966f9ede, type: 3}
+  speaker: {fileID: 1942993252}
+--- !u!4 &769543515
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769543513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 3}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770199326
 GameObject:
   m_ObjectHideFlags: 0
@@ -8620,13 +8666,13 @@ MonoBehaviour:
   ignoredColliders: []
   isGrabbable: 0
   holdButtonToGrab: 1
-  stayGrabbedOnTeleport: 1
+  stayGrabbedOnTeleport: 0
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
@@ -8635,8 +8681,7 @@ MonoBehaviour:
   usingState: 0
   light: {fileID: 1347023711}
   speakers: {fileID: 1942993252}
-  fail:
-  - {fileID: 8300000, guid: 024f90dfca241a1408d388aefb8835cc, type: 3}
+  fail: {fileID: 8300000, guid: 61a1885c2f9883245aa711ce19b89aed, type: 3}
 --- !u!1 &1791567602
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,7 +9093,7 @@ Transform:
   m_GameObject: {fileID: 1836945428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.15, y: -0.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_Children:
   - {fileID: 199614247}
   - {fileID: 1360016709}
@@ -9728,7 +9773,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9784,7 +9829,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -9870,7 +9915,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-619842
+  m_Name: pb_Mesh90086
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
